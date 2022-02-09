@@ -8,6 +8,7 @@ app.use(express.json());
 app.use('/folder',routeFolder)
 app.use('/order', routeOrder)
 
+// Database and server connection
 mongoose
     .connect('mongodb://localhost:27017/task', {
         useNewUrlParser: true,
